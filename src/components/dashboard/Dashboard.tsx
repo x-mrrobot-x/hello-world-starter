@@ -5,6 +5,7 @@ import { StatCard } from "./StatCard";
 import { AppCard } from "./AppCard";
 import { ProcessModal } from "./ProcessModal";
 import { useMotionConfig } from "@/hooks/useMotionConfig";
+import logoImage from "@/assets/logo.png";
 
 const topApps = [
   { name: "Instagram", icon: "📸", count: 234, size: "1.2 GB", color: "#E1306C" },
@@ -33,9 +34,11 @@ export const Dashboard = () => {
         className="mb-8"
       >
         <div className="flex items-center gap-3 mb-2">
-          <div className="w-10 h-10 gradient-primary rounded-xl flex items-center justify-center glow">
-            <Sparkles className="w-5 h-5 text-primary-foreground" />
-          </div>
+          <img 
+            src={logoImage} 
+            alt="ScreenFlow Logo" 
+            className="w-12 h-12 rounded-xl shadow-lg"
+          />
           <div>
             <h1 className="text-2xl font-bold text-foreground">ScreenFlow</h1>
             <p className="text-sm text-muted-foreground">
